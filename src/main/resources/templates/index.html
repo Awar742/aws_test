@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response Body</title>
 </head>
 <body>
-index
+<h1>Response Body:</h1>
+
+<div>
+
+    <p th:text="${note}"></p>
+
+
+    <ul>
+        <li th:each="hour : ${hours}" th:text="${hour}"></li>
+    </ul>
+</div>
 </body>
 </html>
